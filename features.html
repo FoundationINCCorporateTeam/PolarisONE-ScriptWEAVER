@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PolarisONE ScriptWEAVER Features - Discover powerful AI-driven tools for Roblox development">
+    <title>Features - PolarisONE ScriptWEAVER</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900">
+    <!-- Animated Background -->
+    <div id="particles-bg"></div>
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-cyan-500/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="logo-container">
+                        <i class="fas fa-code text-4xl text-cyan-400 glow-text"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-white orbitron">PolarisONE <span class="text-cyan-400">ScriptWEAVER</span></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Home</a>
+                    <a href="features.html" class="nav-link text-cyan-400 transition-all duration-300">Features</a>
+                    <a href="docs.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Docs</a>
+                    <a href="pricing.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Pricing</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">About</a>
+                    <a href="index.html#contact" class="btn-primary">Get Started</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-cyan-500/20">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html" class="text-white hover:text-cyan-400 transition-all">Home</a>
+                <a href="features.html" class="text-cyan-400 transition-all">Features</a>
+                <a href="docs.html" class="text-white hover:text-cyan-400 transition-all">Docs</a>
+                <a href="pricing.html" class="text-white hover:text-cyan-400 transition-all">Pricing</a>
+                <a href="about.html" class="text-white hover:text-cyan-400 transition-all">About</a>
+                <a href="index.html#contact" class="btn-primary inline-block text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-6xl md:text-7xl font-black mb-6 orbitron">
+                    <span class="text-gradient">Powerful Features</span>
+                </h1>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    Explore the cutting-edge capabilities that make ScriptWEAVER the ultimate Roblox development assistant
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Grid -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 mb-24">
+                <!-- Feature 1 -->
+                <div class="feature-card glass-card p-8">
+                    <div class="flex items-start space-x-6">
+                        <div class="feature-icon bg-gradient-to-br from-cyan-500 to-blue-600">
+                            <i class="fas fa-magic text-4xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-bold text-white orbitron mb-4">AI Code Generation</h3>
+                            <p class="text-gray-300 mb-4">
+                                Transform natural language descriptions into fully functional Roblox Lua code. Our advanced AI understands context, 
+                                follows best practices, and generates production-ready scripts instantly.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-cyan-400 mt-1 mr-2"></i>
+                                    <span>Context-aware code suggestions</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-cyan-400 mt-1 mr-2"></i>
+                                    <span>Multi-file project generation</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-cyan-400 mt-1 mr-2"></i>
+                                    <span>Best practices built-in</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card glass-card p-8">
+                    <div class="flex items-start space-x-6">
+                        <div class="feature-icon bg-gradient-to-br from-purple-500 to-pink-600">
+                            <i class="fas fa-bug text-4xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-bold text-white orbitron mb-4">Smart Debugging</h3>
+                            <p class="text-gray-300 mb-4">
+                                Identify and fix bugs in seconds with AI-powered debugging. Get detailed explanations of errors, 
+                                suggestions for fixes, and automated code corrections.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                                    <span>Real-time error detection</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                                    <span>Automated fix suggestions</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-purple-400 mt-1 mr-2"></i>
+                                    <span>Performance issue detection</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card glass-card p-8">
+                    <div class="flex items-start space-x-6">
+                        <div class="feature-icon bg-gradient-to-br from-green-500 to-teal-600">
+                            <i class="fas fa-rocket text-4xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-bold text-white orbitron mb-4">Performance Optimization</h3>
+                            <p class="text-gray-300 mb-4">
+                                Automatically analyze and optimize your code for maximum performance. Reduce server load, 
+                                improve FPS, and enhance user experience with intelligent optimization.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                                    <span>Automated code refactoring</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                                    <span>Memory leak detection</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-green-400 mt-1 mr-2"></i>
+                                    <span>Performance benchmarking</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card glass-card p-8">
+                    <div class="flex items-start space-x-6">
+                        <div class="feature-icon bg-gradient-to-br from-orange-500 to-red-600">
+                            <i class="fas fa-brain text-4xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-3xl font-bold text-white orbitron mb-4">Context-Aware Intelligence</h3>
+                            <p class="text-gray-300 mb-4">
+                                Our AI understands your entire project structure, game mechanics, and coding patterns. 
+                                Get suggestions that fit perfectly into your existing codebase.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                                    <span>Project-wide analysis</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                                    <span>Smart auto-completion</span>
+                                </li>
+                                <li class="flex items-start text-gray-400">
+                                    <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                                    <span>Pattern recognition</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Features -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-6 text-center hover-lift">
+                    <i class="fas fa-book text-5xl text-indigo-400 mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-3 orbitron">Documentation Generator</h4>
+                    <p class="text-gray-400">Automatically generate comprehensive documentation for your scripts and APIs.</p>
+                </div>
+                
+                <div class="glass-card p-6 text-center hover-lift">
+                    <i class="fas fa-code-branch text-5xl text-pink-400 mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-3 orbitron">Version Control Integration</h4>
+                    <p class="text-gray-400">Seamlessly integrate with Git and other version control systems.</p>
+                </div>
+                
+                <div class="glass-card p-6 text-center hover-lift">
+                    <i class="fas fa-users text-5xl text-yellow-400 mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-3 orbitron">Team Collaboration</h4>
+                    <p class="text-gray-400">Share code snippets, collaborate in real-time, and sync across teams.</p>
+                </div>
+                
+                <div class="glass-card p-6 text-center hover-lift">
+                    <i class="fas fa-shield-alt text-5xl text-green-400 mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-3 orbitron">Security Scanning</h4>
+                    <p class="text-gray-400">Detect vulnerabilities and security issues before deployment.</p>
+                </div>
+                
+                <div class="glass-card p-6 text-center hover-lift">
+                    <i class="fas fa-chart-line text-5xl text-blue-400 mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-3 orbitron">Analytics Dashboard</h4>
+                    <p class="text-gray-400">Track code quality, performance metrics, and development progress.</p>
+                </div>
+                
+                <div class="glass-card p-6 text-center hover-lift">
+                    <i class="fas fa-plug text-5xl text-purple-400 mb-4"></i>
+                    <h4 class="text-xl font-bold text-white mb-3 orbitron">API Integration</h4>
+                    <p class="text-gray-400">Connect with external APIs and services effortlessly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="cta-card text-center p-12">
+                <h2 class="text-5xl font-bold mb-6 orbitron text-white">
+                    Ready to Experience <span class="text-gradient">Next-Level</span> Development?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Start using ScriptWEAVER today and transform your Roblox development workflow
+                </p>
+                <a href="pricing.html" class="btn-primary btn-lg">
+                    View Pricing Plans
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-cyan-500/20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-code text-3xl text-cyan-400"></i>
+                        <span class="text-xl font-bold text-white orbitron">ScriptWEAVER</span>
+                    </div>
+                    <p class="text-gray-400">
+                        The future of Roblox development is here.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-cyan-400 transition">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-cyan-400 transition">Pricing</a></li>
+                        <li><a href="docs.html" class="text-gray-400 hover:text-cyan-400 transition">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-cyan-400 transition">About</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 PolarisONE ScriptWEAVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

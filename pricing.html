@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PolarisONE ScriptWEAVER Pricing - Choose the perfect plan for your Roblox development needs">
+    <title>Pricing - PolarisONE ScriptWEAVER</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900">
+    <!-- Animated Background -->
+    <div id="particles-bg"></div>
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-cyan-500/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="logo-container">
+                        <i class="fas fa-code text-4xl text-cyan-400 glow-text"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-white orbitron">PolarisONE <span class="text-cyan-400">ScriptWEAVER</span></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Home</a>
+                    <a href="features.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Features</a>
+                    <a href="docs.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Docs</a>
+                    <a href="pricing.html" class="nav-link text-cyan-400 transition-all duration-300">Pricing</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">About</a>
+                    <a href="index.html#contact" class="btn-primary">Get Started</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-cyan-500/20">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html" class="text-white hover:text-cyan-400 transition-all">Home</a>
+                <a href="features.html" class="text-white hover:text-cyan-400 transition-all">Features</a>
+                <a href="docs.html" class="text-white hover:text-cyan-400 transition-all">Docs</a>
+                <a href="pricing.html" class="text-cyan-400 transition-all">Pricing</a>
+                <a href="about.html" class="text-white hover:text-cyan-400 transition-all">About</a>
+                <a href="index.html#contact" class="btn-primary inline-block text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <div class="hero-badge mb-6 inline-block">
+                    <span class="px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full text-cyan-300 text-sm font-semibold border border-cyan-500/30 glow-border">
+                        💎 Premium Plans for Every Developer
+                    </span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-black mb-6 orbitron">
+                    <span class="text-gradient">Choose Your Plan</span>
+                </h1>
+                
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    Select the perfect plan to supercharge your Roblox development workflow. All plans include our core AI features with varying limits and capabilities.
+                </p>
+            </div>
+            
+            <!-- Billing Toggle -->
+            <div class="flex items-center justify-center mb-12">
+                <span class="text-white mr-4">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="text-white ml-4">Annual <span class="text-green-400 text-sm">(Save 20%)</span></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Cards -->
+    <section class="pb-24">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="pricing-card">
+                    <div class="text-center mb-6">
+                        <div class="inline-block p-4 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-2xl mb-4">
+                            <i class="fas fa-rocket text-4xl text-cyan-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white orbitron mb-2">Starter</h3>
+                        <p class="text-gray-400">Perfect for beginners</p>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex items-end justify-center">
+                            <span class="text-5xl font-bold text-white price-monthly">$29</span>
+                            <span class="text-5xl font-bold text-white price-annual hidden">$23</span>
+                            <span class="text-gray-400 ml-2 mb-2">/month</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 annual-savings hidden">Billed annually at $276</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">1,000 AI requests/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Basic code generation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Standard debugging tools</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Email support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">5 projects</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-cyan-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Community access</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-secondary w-full">
+                        Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Professional Plan -->
+                <div class="pricing-card popular-plan">
+                    <div class="popular-badge">
+                        <i class="fas fa-star mr-1"></i> Most Popular
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="inline-block p-4 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl mb-4">
+                            <i class="fas fa-crown text-4xl text-purple-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white orbitron mb-2">Professional</h3>
+                        <p class="text-gray-400">For serious developers</p>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex items-end justify-center">
+                            <span class="text-5xl font-bold text-white price-monthly">$79</span>
+                            <span class="text-5xl font-bold text-white price-annual hidden">$63</span>
+                            <span class="text-gray-400 ml-2 mb-2">/month</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 annual-savings hidden">Billed annually at $756</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">10,000 AI requests/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Advanced code generation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Smart debugging & optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Priority support (24/7)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Unlimited projects</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Team collaboration (5 members)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Custom templates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">API access</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-primary w-full">
+                        Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="text-center mb-6">
+                        <div class="inline-block p-4 bg-gradient-to-br from-green-500/20 to-teal-500/20 rounded-2xl mb-4">
+                            <i class="fas fa-building text-4xl text-green-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white orbitron mb-2">Enterprise</h3>
+                        <p class="text-gray-400">For large teams</p>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex items-end justify-center">
+                            <span class="text-5xl font-bold text-white price-monthly">$199</span>
+                            <span class="text-5xl font-bold text-white price-annual hidden">$159</span>
+                            <span class="text-gray-400 ml-2 mb-2">/month</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 annual-savings hidden">Billed annually at $1,908</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">50,000 AI requests/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Enterprise code generation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Advanced security features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Dedicated support team</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Unlimited projects & members</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Advanced analytics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Custom integrations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">SLA guarantee</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">On-premise deployment option</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-secondary w-full">
+                        Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+                
+                <!-- Ultimate Plan -->
+                <div class="pricing-card premium-plan">
+                    <div class="premium-badge">
+                        <i class="fas fa-gem mr-1"></i> Premium
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="inline-block p-4 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-2xl mb-4">
+                            <i class="fas fa-fire text-4xl text-orange-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white orbitron mb-2">Ultimate</h3>
+                        <p class="text-gray-400">Unlimited everything</p>
+                    </div>
+                    
+                    <div class="text-center mb-6">
+                        <div class="flex items-end justify-center">
+                            <span class="text-5xl font-bold text-white price-monthly">$399</span>
+                            <span class="text-5xl font-bold text-white price-annual hidden">$319</span>
+                            <span class="text-gray-400 ml-2 mb-2">/month</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-2 annual-savings hidden">Billed annually at $3,828</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300"><strong>Unlimited</strong> AI requests</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Next-gen AI model access</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">White-label solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Personal account manager</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Everything in Enterprise</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Custom AI model training</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Priority feature requests</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Exclusive beta access</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Training & onboarding</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-orange-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">Lifetime updates</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="btn-primary w-full premium-btn">
+                        Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Comparison Table -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6 orbitron">
+                    <span class="text-gradient">Detailed Comparison</span>
+                </h2>
+                <p class="text-xl text-gray-300">
+                    Compare all features across our plans
+                </p>
+            </div>
+            
+            <div class="glass-card p-4 md:p-8 overflow-x-auto">
+                <table class="comparison-table w-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left text-white font-bold text-lg py-4 px-6">Features</th>
+                            <th class="text-center text-cyan-400 font-bold text-lg py-4 px-6">Starter</th>
+                            <th class="text-center text-purple-400 font-bold text-lg py-4 px-6">Professional</th>
+                            <th class="text-center text-green-400 font-bold text-lg py-4 px-6">Enterprise</th>
+                            <th class="text-center text-orange-400 font-bold text-lg py-4 px-6">Ultimate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- AI Requests -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">AI Requests per Month</td>
+                            <td class="py-4 px-6 text-center text-gray-300">1,000</td>
+                            <td class="py-4 px-6 text-center text-gray-300">10,000</td>
+                            <td class="py-4 px-6 text-center text-gray-300">50,000</td>
+                            <td class="py-4 px-6 text-center text-gray-300"><strong>Unlimited</strong></td>
+                        </tr>
+                        
+                        <!-- Code Generation -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Code Generation</td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-cyan-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Smart Debugging -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Smart Debugging</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Performance Optimization -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Performance Optimization</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Projects -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Number of Projects</td>
+                            <td class="py-4 px-6 text-center text-gray-300">5</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Unlimited</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Unlimited</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Unlimited</td>
+                        </tr>
+                        
+                        <!-- Team Members -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Team Members</td>
+                            <td class="py-4 px-6 text-center text-gray-300">1</td>
+                            <td class="py-4 px-6 text-center text-gray-300">5</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Unlimited</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Unlimited</td>
+                        </tr>
+                        
+                        <!-- API Access -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">API Access</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Custom Templates -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Custom Templates</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Documentation Generator -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Documentation Generator</td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-cyan-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Code Review -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">AI Code Review</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Version Control Integration -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Version Control Integration</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-purple-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Analytics Dashboard -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Analytics Dashboard</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Basic</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Advanced</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Advanced</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Advanced</td>
+                        </tr>
+                        
+                        <!-- Support -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Support</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Email</td>
+                            <td class="py-4 px-6 text-center text-gray-300">24/7 Priority</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Dedicated Team</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Personal Manager</td>
+                        </tr>
+                        
+                        <!-- Security Features -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Advanced Security</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Custom Integrations -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Custom Integrations</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-green-400"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- SLA -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">SLA Guarantee</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-300">99.9%</td>
+                            <td class="py-4 px-6 text-center text-gray-300">99.99%</td>
+                        </tr>
+                        
+                        <!-- On-Premise -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">On-Premise Deployment</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-300">Optional</td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- White Label -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">White-Label Solutions</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Custom AI Training -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Custom AI Model Training</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Training -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Training & Onboarding</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Beta Access -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Exclusive Beta Access</td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center text-gray-500"><i class="fas fa-minus"></i></td>
+                            <td class="py-4 px-6 text-center"><i class="fas fa-check text-orange-400"></i></td>
+                        </tr>
+                        
+                        <!-- Response Time -->
+                        <tr class="border-t border-gray-700/50 bg-gray-800/20">
+                            <td class="py-4 px-6 text-white font-semibold">Average Response Time</td>
+                            <td class="py-4 px-6 text-center text-gray-300">24 hours</td>
+                            <td class="py-4 px-6 text-center text-gray-300">2 hours</td>
+                            <td class="py-4 px-6 text-center text-gray-300">30 minutes</td>
+                            <td class="py-4 px-6 text-center text-gray-300">15 minutes</td>
+                        </tr>
+                        
+                        <!-- Storage -->
+                        <tr class="border-t border-gray-700/50">
+                            <td class="py-4 px-6 text-white font-semibold">Cloud Storage</td>
+                            <td class="py-4 px-6 text-center text-gray-300">10 GB</td>
+                            <td class="py-4 px-6 text-center text-gray-300">100 GB</td>
+                            <td class="py-4 px-6 text-center text-gray-300">500 GB</td>
+                            <td class="py-4 px-6 text-center text-gray-300">Unlimited</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section -->
+    <section class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6 orbitron">
+                    <span class="text-gradient">Frequently Asked Questions</span>
+                </h2>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="faq-item glass-card p-6">
+                    <div class="faq-question flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold text-white">Can I switch plans later?</h3>
+                        <i class="fas fa-chevron-down text-cyan-400"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-gray-300">
+                        Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate any charges.
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card p-6">
+                    <div class="faq-question flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold text-white">What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down text-cyan-400"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-gray-300">
+                        We accept all major credit cards, PayPal, and wire transfers for enterprise customers.
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card p-6">
+                    <div class="faq-question flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold text-white">Is there a money-back guarantee?</h3>
+                        <i class="fas fa-chevron-down text-cyan-400"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-gray-300">
+                        Absolutely! We offer a 30-day money-back guarantee on all plans. If you're not satisfied, we'll refund your purchase.
+                    </div>
+                </div>
+                
+                <div class="faq-item glass-card p-6">
+                    <div class="faq-question flex justify-between items-center cursor-pointer">
+                        <h3 class="text-xl font-bold text-white">Can I cancel my subscription anytime?</h3>
+                        <i class="fas fa-chevron-down text-cyan-400"></i>
+                    </div>
+                    <div class="faq-answer hidden mt-4 text-gray-300">
+                        Yes, you can cancel your subscription at any time. You'll retain access until the end of your billing period.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-cyan-500/20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-code text-3xl text-cyan-400"></i>
+                        <span class="text-xl font-bold text-white orbitron">ScriptWEAVER</span>
+                    </div>
+                    <p class="text-gray-400">
+                        The future of Roblox development is here.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-cyan-400 transition">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-cyan-400 transition">Pricing</a></li>
+                        <li><a href="docs.html" class="text-gray-400 hover:text-cyan-400 transition">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-cyan-400 transition">About</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 PolarisONE ScriptWEAVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

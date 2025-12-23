@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PolarisONE ScriptWEAVER Documentation - Learn how to use the AI coding assistant">
+    <title>Documentation - PolarisONE ScriptWEAVER</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900">
+    <!-- Animated Background -->
+    <div id="particles-bg"></div>
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-cyan-500/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="logo-container">
+                        <i class="fas fa-code text-4xl text-cyan-400 glow-text"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-white orbitron">PolarisONE <span class="text-cyan-400">ScriptWEAVER</span></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Home</a>
+                    <a href="features.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Features</a>
+                    <a href="docs.html" class="nav-link text-cyan-400 transition-all duration-300">Docs</a>
+                    <a href="pricing.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Pricing</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">About</a>
+                    <a href="index.html#contact" class="btn-primary">Get Started</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-cyan-500/20">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html" class="text-white hover:text-cyan-400 transition-all">Home</a>
+                <a href="features.html" class="text-white hover:text-cyan-400 transition-all">Features</a>
+                <a href="docs.html" class="text-cyan-400 transition-all">Docs</a>
+                <a href="pricing.html" class="text-white hover:text-cyan-400 transition-all">Pricing</a>
+                <a href="about.html" class="text-white hover:text-cyan-400 transition-all">About</a>
+                <a href="index.html#contact" class="btn-primary inline-block text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-6xl md:text-7xl font-black mb-6 orbitron">
+                    <span class="text-gradient">Documentation</span>
+                </h1>
+                <p class="text-xl text-gray-300 leading-relaxed">
+                    Everything you need to know to get started with ScriptWEAVER
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documentation Content -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="glass-card p-6 sticky top-24">
+                        <h3 class="text-xl font-bold text-white mb-4 orbitron">Quick Navigation</h3>
+                        <ul class="space-y-3">
+                            <li>
+                                <a href="#getting-started" class="text-cyan-400 hover:text-cyan-300 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    Getting Started
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#installation" class="text-gray-400 hover:text-cyan-400 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    Installation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#basic-usage" class="text-gray-400 hover:text-cyan-400 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    Basic Usage
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ai-features" class="text-gray-400 hover:text-cyan-400 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    AI Features
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#api-reference" class="text-gray-400 hover:text-cyan-400 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    API Reference
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#best-practices" class="text-gray-400 hover:text-cyan-400 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    Best Practices
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#troubleshooting" class="text-gray-400 hover:text-cyan-400 transition flex items-center">
+                                    <i class="fas fa-chevron-right mr-2"></i>
+                                    Troubleshooting
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="lg:col-span-3 space-y-8">
+                    <!-- Getting Started -->
+                    <div id="getting-started" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">Getting Started</h2>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            Welcome to ScriptWEAVER! This guide will help you get up and running in minutes. 
+                            ScriptWEAVER is designed to be intuitive and powerful, helping you write better Roblox code faster.
+                        </p>
+                        <div class="bg-cyan-500/10 border-l-4 border-cyan-500 p-4 rounded-r-lg">
+                            <p class="text-cyan-300">
+                                <i class="fas fa-info-circle mr-2"></i>
+                                <strong>Prerequisites:</strong> You'll need a Roblox Studio installation and a ScriptWEAVER account.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Installation -->
+                    <div id="installation" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">Installation</h2>
+                        <p class="text-gray-300 mb-6">Follow these simple steps to install ScriptWEAVER:</p>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-gray-800/50 p-6 rounded-lg border border-cyan-500/20">
+                                <h4 class="text-xl font-bold text-white mb-3 flex items-center">
+                                    <span class="bg-cyan-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">1</span>
+                                    Create an Account
+                                </h4>
+                                <p class="text-gray-400 ml-11">
+                                    Sign up at <a href="pricing.html" class="text-cyan-400 hover:underline">scriptweaver.ai</a> and choose your plan.
+                                </p>
+                            </div>
+                            
+                            <div class="bg-gray-800/50 p-6 rounded-lg border border-purple-500/20">
+                                <h4 class="text-xl font-bold text-white mb-3 flex items-center">
+                                    <span class="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">2</span>
+                                    Download Plugin
+                                </h4>
+                                <p class="text-gray-400 ml-11 mb-3">
+                                    Download the ScriptWEAVER plugin for Roblox Studio from your dashboard.
+                                </p>
+                                <pre class="bg-gray-900 p-4 rounded-lg ml-11"><code class="text-cyan-300">Roblox Studio > Plugins > Manage Plugins > Install ScriptWEAVER</code></pre>
+                            </div>
+                            
+                            <div class="bg-gray-800/50 p-6 rounded-lg border border-pink-500/20">
+                                <h4 class="text-xl font-bold text-white mb-3 flex items-center">
+                                    <span class="bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-3">3</span>
+                                    Authenticate
+                                </h4>
+                                <p class="text-gray-400 ml-11">
+                                    Open the plugin in Roblox Studio and log in with your ScriptWEAVER credentials.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Basic Usage -->
+                    <div id="basic-usage" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">Basic Usage</h2>
+                        <p class="text-gray-300 mb-6">Learn the fundamentals of using ScriptWEAVER:</p>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4">Code Generation</h3>
+                        <p class="text-gray-300 mb-4">Simply describe what you want to build in natural language:</p>
+                        <pre class="bg-gray-900 p-6 rounded-lg mb-6 overflow-x-auto"><code class="text-green-300">// Type in the ScriptWEAVER prompt:
+"Create a click detector that teleports the player to spawn"
+
+// ScriptWEAVER generates:
+local clickDetector = Instance.new("ClickDetector")
+clickDetector.Parent = script.Parent
+
+clickDetector.MouseClick:Connect(function(player)
+    local spawnLocation = workspace.SpawnLocation
+    if spawnLocation then
+        player.Character:MoveTo(spawnLocation.Position)
+    end
+end)</code></pre>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Code Completion</h3>
+                        <p class="text-gray-300 mb-4">Get intelligent suggestions as you type:</p>
+                        <pre class="bg-gray-900 p-6 rounded-lg"><code class="text-cyan-300">-- Start typing and press Ctrl+Space for suggestions
+local player = game.Players.LocalPlayer
+player. <span class="text-purple-400">-- AI suggests: Character, UserId, Name, etc.</span></code></pre>
+                    </div>
+                    
+                    <!-- AI Features -->
+                    <div id="ai-features" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">AI Features</h2>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-800/50 p-6 rounded-lg">
+                                <h4 class="text-xl font-bold text-cyan-400 mb-3">
+                                    <i class="fas fa-magic mr-2"></i>Code Generation
+                                </h4>
+                                <p class="text-gray-400">
+                                    Describe functionality in plain English and get production-ready Lua code instantly.
+                                </p>
+                            </div>
+                            
+                            <div class="bg-gray-800/50 p-6 rounded-lg">
+                                <h4 class="text-xl font-bold text-purple-400 mb-3">
+                                    <i class="fas fa-bug mr-2"></i>Smart Debugging
+                                </h4>
+                                <p class="text-gray-400">
+                                    Automatic bug detection with detailed explanations and fix suggestions.
+                                </p>
+                            </div>
+                            
+                            <div class="bg-gray-800/50 p-6 rounded-lg">
+                                <h4 class="text-xl font-bold text-green-400 mb-3">
+                                    <i class="fas fa-rocket mr-2"></i>Optimization
+                                </h4>
+                                <p class="text-gray-400">
+                                    Analyze code performance and apply optimizations automatically.
+                                </p>
+                            </div>
+                            
+                            <div class="bg-gray-800/50 p-6 rounded-lg">
+                                <h4 class="text-xl font-bold text-pink-400 mb-3">
+                                    <i class="fas fa-book mr-2"></i>Documentation
+                                </h4>
+                                <p class="text-gray-400">
+                                    Generate comprehensive documentation for your scripts automatically.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- API Reference -->
+                    <div id="api-reference" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">API Reference</h2>
+                        <p class="text-gray-300 mb-6">Access ScriptWEAVER programmatically:</p>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4">REST API</h3>
+                        <pre class="bg-gray-900 p-6 rounded-lg mb-6 overflow-x-auto"><code class="text-cyan-300">POST https://api.scriptweaver.ai/v1/generate
+Content-Type: application/json
+Authorization: Bearer YOUR_API_KEY
+
+{
+  "prompt": "Create a GUI button that saves player data",
+  "language": "lua",
+  "context": "Roblox"
+}</code></pre>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-4 mt-8">Response Format</h3>
+                        <pre class="bg-gray-900 p-6 rounded-lg overflow-x-auto"><code class="text-green-300">{
+  "success": true,
+  "code": "-- Generated Lua code here",
+  "explanation": "This code creates a GUI button...",
+  "confidence": 0.95
+}</code></pre>
+                    </div>
+                    
+                    <!-- Best Practices -->
+                    <div id="best-practices" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">Best Practices</h2>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Be Specific</h4>
+                                    <p class="text-gray-400">Provide detailed descriptions for better code generation results.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Review Generated Code</h4>
+                                    <p class="text-gray-400">Always review and test AI-generated code before deploying to production.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Use Context</h4>
+                                    <p class="text-gray-400">Provide context about your project for more accurate suggestions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-400 text-2xl mt-1 mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold text-white mb-2">Iterate</h4>
+                                    <p class="text-gray-400">Refine prompts and generated code through iterations for best results.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Troubleshooting -->
+                    <div id="troubleshooting" class="glass-card p-8">
+                        <h2 class="text-4xl font-bold mb-6 orbitron text-gradient">Troubleshooting</h2>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-3">Plugin Not Loading</h4>
+                                <p class="text-gray-400 mb-2">If the plugin doesn't load in Roblox Studio:</p>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                                    <li>Restart Roblox Studio</li>
+                                    <li>Check if the plugin is enabled in Plugins > Manage Plugins</li>
+                                    <li>Verify your internet connection</li>
+                                    <li>Reinstall the plugin</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-3">Authentication Issues</h4>
+                                <p class="text-gray-400 mb-2">If you can't log in:</p>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                                    <li>Verify your credentials</li>
+                                    <li>Check your subscription status</li>
+                                    <li>Clear browser cache and cookies</li>
+                                    <li>Contact support if the issue persists</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-3">Slow Code Generation</h4>
+                                <p class="text-gray-400 mb-2">If code generation is slow:</p>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1 ml-4">
+                                    <li>Check your internet connection speed</li>
+                                    <li>Try simplifying your prompt</li>
+                                    <li>Upgrade to a higher-tier plan for priority processing</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-500/10 border-l-4 border-purple-500 p-4 rounded-r-lg mt-6">
+                            <p class="text-purple-300">
+                                <i class="fas fa-question-circle mr-2"></i>
+                                <strong>Need More Help?</strong> Contact our support team at <a href="index.html#contact" class="underline">support@scriptweaver.ai</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-cyan-500/20 mt-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-code text-3xl text-cyan-400"></i>
+                        <span class="text-xl font-bold text-white orbitron">ScriptWEAVER</span>
+                    </div>
+                    <p class="text-gray-400">
+                        The future of Roblox development is here.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-cyan-400 transition">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-cyan-400 transition">Pricing</a></li>
+                        <li><a href="docs.html" class="text-gray-400 hover:text-cyan-400 transition">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-cyan-400 transition">About</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 PolarisONE ScriptWEAVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
