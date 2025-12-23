@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PolarisONE ScriptWEAVER - Advanced Roblox AI Coding Assistant">
+    <title>PolarisONE ScriptWEAVER - Roblox AI Coding Assistant</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-indigo-900">
+    <!-- Animated Background -->
+    <div id="particles-bg"></div>
+    <div class="animated-bg"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-cyan-500/20">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="logo-container">
+                        <i class="fas fa-code text-4xl text-cyan-400 glow-text"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-white orbitron">PolarisONE <span class="text-cyan-400">ScriptWEAVER</span></span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Home</a>
+                    <a href="features.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Features</a>
+                    <a href="docs.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Docs</a>
+                    <a href="pricing.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">Pricing</a>
+                    <a href="about.html" class="nav-link text-white hover:text-cyan-400 transition-all duration-300">About</a>
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-cyan-500/20">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="index.html" class="text-white hover:text-cyan-400 transition-all">Home</a>
+                <a href="features.html" class="text-white hover:text-cyan-400 transition-all">Features</a>
+                <a href="docs.html" class="text-white hover:text-cyan-400 transition-all">Docs</a>
+                <a href="pricing.html" class="text-white hover:text-cyan-400 transition-all">Pricing</a>
+                <a href="about.html" class="text-white hover:text-cyan-400 transition-all">About</a>
+                <a href="#contact" class="btn-primary inline-block text-center">Get Started</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center max-w-5xl mx-auto">
+                <div class="hero-badge mb-6 inline-block">
+                    <span class="px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full text-cyan-300 text-sm font-semibold border border-cyan-500/30 glow-border">
+                        🚀 Next-Generation AI Coding Assistant
+                    </span>
+                </div>
+                
+                <h1 class="text-6xl md:text-8xl font-black mb-6 orbitron hero-title">
+                    <span class="text-white">Polaris</span><span class="text-cyan-400 glow-text">ONE</span>
+                    <br>
+                    <span class="text-gradient">ScriptWEAVER</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Revolutionary AI-powered coding assistant designed specifically for <span class="text-purple-400 font-semibold">Roblox development</span>. 
+                    Transform your ideas into reality with lightning-fast code generation, intelligent debugging, and advanced script optimization.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-12">
+                    <a href="pricing.html" class="btn-primary btn-lg group">
+                        Start Creating Now
+                        <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#demo" class="btn-secondary btn-lg">
+                        <i class="fas fa-play mr-2"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-16">
+                    <div class="stat-card">
+                        <div class="text-4xl font-bold text-cyan-400 mb-2 counter" data-target="10000">0</div>
+                        <div class="text-gray-400 text-sm">Active Developers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-4xl font-bold text-purple-400 mb-2 counter" data-target="1000000">0</div>
+                        <div class="text-gray-400 text-sm">Lines Generated</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-4xl font-bold text-pink-400 mb-2 counter" data-target="99">0</div>
+                        <div class="text-gray-400 text-sm">Accuracy %</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="text-4xl font-bold text-green-400 mb-2 counter" data-target="24">0</div>
+                        <div class="text-gray-400 text-sm">Support 24/7</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-element" style="top: 20%; left: 10%;">
+            <i class="fas fa-code text-cyan-400 text-4xl opacity-20"></i>
+        </div>
+        <div class="floating-element" style="top: 60%; right: 10%; animation-delay: 1s;">
+            <i class="fas fa-robot text-purple-400 text-5xl opacity-20"></i>
+        </div>
+        <div class="floating-element" style="bottom: 20%; left: 15%; animation-delay: 2s;">
+            <i class="fas fa-brain text-pink-400 text-4xl opacity-20"></i>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6 orbitron">
+                    <span class="text-gradient">Powerful Features</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Unlock the full potential of Roblox development with our cutting-edge AI technology
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Card 1 -->
+                <div class="feature-card group">
+                    <div class="feature-icon bg-gradient-to-br from-cyan-500 to-blue-600">
+                        <i class="fas fa-magic text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white orbitron">AI Code Generation</h3>
+                    <p class="text-gray-400 mb-4">
+                        Generate complex Roblox Lua scripts instantly with our advanced AI. From simple functions to complete game systems.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 2 -->
+                <div class="feature-card group">
+                    <div class="feature-icon bg-gradient-to-br from-purple-500 to-pink-600">
+                        <i class="fas fa-bug text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white orbitron">Smart Debugging</h3>
+                    <p class="text-gray-400 mb-4">
+                        Identify and fix bugs in seconds with AI-powered debugging that understands your code context.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 3 -->
+                <div class="feature-card group">
+                    <div class="feature-icon bg-gradient-to-br from-green-500 to-teal-600">
+                        <i class="fas fa-rocket text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white orbitron">Performance Optimization</h3>
+                    <p class="text-gray-400 mb-4">
+                        Automatically optimize your scripts for maximum performance and minimal server load.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 4 -->
+                <div class="feature-card group">
+                    <div class="feature-icon bg-gradient-to-br from-orange-500 to-red-600">
+                        <i class="fas fa-brain text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white orbitron">Context-Aware AI</h3>
+                    <p class="text-gray-400 mb-4">
+                        Our AI understands your entire project structure and provides contextually relevant suggestions.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 5 -->
+                <div class="feature-card group">
+                    <div class="feature-icon bg-gradient-to-br from-indigo-500 to-purple-600">
+                        <i class="fas fa-book text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white orbitron">Documentation Generator</h3>
+                    <p class="text-gray-400 mb-4">
+                        Automatically generate comprehensive documentation for your Roblox scripts and projects.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Feature Card 6 -->
+                <div class="feature-card group">
+                    <div class="feature-icon bg-gradient-to-br from-pink-500 to-rose-600">
+                        <i class="fas fa-users text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-white orbitron">Team Collaboration</h3>
+                    <p class="text-gray-400 mb-4">
+                        Share code snippets, collaborate on projects, and sync work across your development team.
+                    </p>
+                    <a href="features.html" class="feature-link">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Demo Section -->
+    <section id="demo" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="glass-card p-8 md:p-12 max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold mb-6 orbitron">
+                        <span class="text-gradient">See It In Action</span>
+                    </h2>
+                    <p class="text-xl text-gray-300">
+                        Watch how ScriptWEAVER transforms your development workflow
+                    </p>
+                </div>
+                
+                <div class="relative rounded-xl overflow-hidden shadow-2xl demo-video-container">
+                    <div class="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+                        <button class="play-button">
+                            <i class="fas fa-play text-6xl text-cyan-400"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="text-cyan-400 text-4xl mb-3">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Lightning Fast</h4>
+                        <p class="text-gray-400">Generate code in milliseconds</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-purple-400 text-4xl mb-3">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Secure & Safe</h4>
+                        <p class="text-gray-400">Enterprise-grade security</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-pink-400 text-4xl mb-3">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">Unlimited Potential</h4>
+                        <p class="text-gray-400">No limits on creativity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6 orbitron">
+                    <span class="text-gradient">What Developers Say</span>
+                </h2>
+                <p class="text-xl text-gray-300">
+                    Join thousands of satisfied Roblox developers
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-white font-bold">
+                            JD
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">John Developer</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        "ScriptWEAVER has completely transformed my workflow. What used to take hours now takes minutes!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-pink-600 flex items-center justify-center text-white font-bold">
+                            SC
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">Sarah Coder</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        "The AI understands exactly what I need. It's like having a senior developer on my team 24/7."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-teal-600 flex items-center justify-center text-white font-bold">
+                            MP
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">Mike Pro</h4>
+                            <div class="text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">
+                        "Best investment I've made for my Roblox development career. The ROI is incredible!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="cta-card text-center p-12 md:p-20">
+                <h2 class="text-5xl md:text-6xl font-bold mb-6 orbitron text-white">
+                    Ready to <span class="text-gradient">Transform</span> Your Workflow?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Join thousands of developers who are already building better games faster with ScriptWEAVER
+                </p>
+                <a href="pricing.html" class="btn-primary btn-lg">
+                    View Pricing Plans
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-5xl font-bold mb-6 orbitron">
+                        <span class="text-gradient">Get In Touch</span>
+                    </h2>
+                    <p class="text-xl text-gray-300">
+                        Have questions? We're here to help!
+                    </p>
+                </div>
+                
+                <div class="glass-card p-8 md:p-12">
+                    <form id="contact-form" action="contact.php" method="POST" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-white mb-2 font-semibold">Name</label>
+                                <input type="text" name="name" required class="input-field">
+                            </div>
+                            <div>
+                                <label class="block text-white mb-2 font-semibold">Email</label>
+                                <input type="email" name="email" required class="input-field">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-white mb-2 font-semibold">Subject</label>
+                            <input type="text" name="subject" required class="input-field">
+                        </div>
+                        <div>
+                            <label class="block text-white mb-2 font-semibold">Message</label>
+                            <textarea name="message" rows="5" required class="input-field"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 border-t border-cyan-500/20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-code text-3xl text-cyan-400"></i>
+                        <span class="text-xl font-bold text-white orbitron">ScriptWEAVER</span>
+                    </div>
+                    <p class="text-gray-400">
+                        The future of Roblox development is here.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="features.html" class="text-gray-400 hover:text-cyan-400 transition">Features</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-cyan-400 transition">Pricing</a></li>
+                        <li><a href="docs.html" class="text-gray-400 hover:text-cyan-400 transition">Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-cyan-400 transition">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-cyan-400 transition">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 PolarisONE ScriptWEAVER. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
